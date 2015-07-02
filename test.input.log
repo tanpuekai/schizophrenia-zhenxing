@@ -1,0 +1,23 @@
+ANNOVAR Version:
+	$LastChangedDate: 2013-02-21 09:21:34 -0800 (Thu, 21 Feb 2013) $
+ANNOVAR Information:
+	For questions, comments, documentation, bug reports and program update, please visit http://www.openbioinformatics.org/annovar/
+ANNOVAR Command:
+	/software/annovar/annotate_variation.pl -geneanno -buildver hg19 test.input /software/annovar/humandb/
+ANNOVAR Started:
+	Thu Mar 19 16:52:57 2015
+NOTICE: Reading gene annotation from /software/annovar/humandb/hg19_refGene.txt ... Done with 41992 transcripts (including 7402 without coding sequence annotation) for 23703 unique genes
+NOTICE: Reading FASTA sequences from /software/annovar/humandb/hg19_refGeneMrna.fa ... Done with 1544 sequences
+WARNING: A total of 2 sequences cannot be found in /software/annovar/humandb/hg19_refGeneMrna.fa
+ (example: NM_001276480 NM_001276479)
+WARNING: A total of 269 sequences will be ignored due to lack of correct ORF annotation
+
+---------------------------------------------------------------------------------------
+WARNING: 100 exonic SNPs have WRONG reference alleles specified in your input file!
+WARNING: An example input line is <19	44933974	44933974	C	T>
+WARNING: ANNOVAR can still annotate exonic_variant_function for the mutation correctly!
+WARNING: you may have used wrong -buildver, or specified incorrect reference allele, or used outdated mRNA FASTA file!
+---------------------------------------------------------------------------------------
+
+NOTICE: Finished gene-based annotation on 999 genetic variants in test.input (including 27 with invalid format written to test.input.invalid_input)
+NOTICE: Output files were written to test.input.variant_function, test.input.exonic_variant_function
